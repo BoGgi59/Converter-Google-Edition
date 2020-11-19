@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="container">
+  <div class="type-input">
+    <select name="type" id="type">
+      <option value="temperature">Temperature</option>
+      <option value="length">Length</option>
+      <option value="weight">Weight</option>
+    </select>
+    <div class="value-input">
+      <input type="text" placeholder="Enter Value" id="input"> <span> = </span>
+      <input type="text" placeholder="Result" id="result">
+      <div class="measure-input">
+        <select name="temperatue" id="tempInput">
+          <!-- <option value="celsius">Celsius</option>
+          <option value="kelvin">Kelvin</option>
+          <option value="fahrenheit">Fahreneit</option> -->
+        </select>
+        <select name="temperatur" id="tempOutput">
+          <option value="celsius">Celsius</option>
+          <option value="kelvin">Kelvin</option>
+          <option value="fahrenheit">Fahreneit</option>
+        </select>
+        <div id="formula">
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+  <script src="script.js"></script>
+</body>
+</html>
