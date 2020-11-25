@@ -7,35 +7,78 @@
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-<div class="container">
-  <div class="type-input">
-    <select name="type" id="type">
-      <option value="temperature">Temperature</option>
-      <option value="length">Length</option>
-      <option value="weight">Weight</option>
-    </select>
-    <div class="value-input">
-      <input type="text" placeholder="Enter Value" id="input"> <span> = </span>
-      <input type="text" placeholder="Result" id="result">
-      <div class="measure-input">
-        <select name="temperatue" id="tempInput">
-          <!-- <option value="celsius">Celsius</option>
-          <option value="kelvin">Kelvin</option>
-          <option value="fahrenheit">Fahreneit</option> -->
-        </select>
-        <select name="temperatur" id="tempOutput">
-          <option value="celsius">Celsius</option>
-          <option value="kelvin">Kelvin</option>
-          <option value="fahrenheit">Fahreneit</option>
-        </select>
-        <div id="formula">
+  <div class="container">
 
+    <div class="type-input">
+
+      <select name="type" id="type">
+        <option value="temperature">Temperature</option>
+        <option value="length">Length</option>
+        <option value="weight">Weight</option>
+      </select>
+
+      <div class="value-input">
+        <input type="text" placeholder="Enter Value" id="input">
+         <span> = </span>
+        <input type="text" placeholder="Result" id="result">
+
+        <div class="measure-input">
+          <select name="temperatue" id="tempInput">
+            <option value="celsius" class = "celciusInp tempinput1">Celsius</option>
+            <option value="kelvin" class = "kelvinInp tempinput1">Kelvin</option>
+            <option value="fahrenheit" class = "fahrenheitInp tempinput1">Fahreneit</option>
+          
+          </select>
+          <select name="temperatur" id="tempOutput">
+            <option value="celsius">Celsius</option>
+            <option value="kelvin">Kelvin</option>
+            <option value="fahrenheit">Fahreneit</option>
+          </select>
+
+          <select name="length" id="lengthInput"  >
+            <option value="milimeter">Milimeter</option>
+            <option value="cantimeter">Cantimeter</option>
+            <option value="meter">Meter</option>
+            <option value="kilometer">Kilometer</option>
+            <option value="micrometer">Micrometer</option>
+            <option value="nanometer">Nanometer</option>
+          </select>
+
+          <select name="length" id="lengthOutput">
+            <option value="milimeter">Milimeter</option>
+            <option value="cantimeter">Cantimeter</option>
+            <option value="meter">Meter</option>
+            <option value="kilometer">Kilometer</option>
+            <option value="micrometer">Micrometer</option>
+            <option value="nanometer">Nanometer</option>
+          </select>
+          
+          <select name="weight" id="weightInput">
+            <option value="mikrogram">Mikrogram</option>
+            <option value="miligram">Miligram</option>
+            <option value="gram">Gram</option>
+            <option value="kilogram">Kilogram</option>
+            <option value="ton">Ton</option>
+          </select>
+          <select name="weight" id="weightOutput">
+            <option value="mikrogram">Mikrogram</option>
+            <option value="miligram">Miligram</option>
+            <option value="gram">Gram</option>
+            <option value="kilogram">Kilogram</option>
+            <option value="ton">Ton</option>
+          </select>
+
+          <div id="formulaContainer"> <tr>
+            <table>
+            <th>Formula:</th>
+            <td><span id="formula"></span></td>
+          </tr>
+        </table>
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
-
 
 
   <script src="script.js"></script>
